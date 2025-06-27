@@ -1,0 +1,21 @@
+<p>controlflow works!</p>
+@if(isVisible === true){
+    <h2> The visibility of the paragraph is controled by button</h2>
+}
+
+<button (click) = "show()">show</button>
+<button (click) = "hide()">hide</button>
+
+@if(x === 1){
+    <h1>one</h1>
+}
+@else if(x === 2){
+    <h1>two</h1>
+}
+@else{
+    <h1>{{x}}</h1>
+}
+
+@for(item of list; track item){
+    <p>{{item}}</p>
+}

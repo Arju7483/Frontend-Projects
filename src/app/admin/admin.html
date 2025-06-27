@@ -1,0 +1,16 @@
+<p>admin works!</p>
+<button (click)="fun()">click here</button>
+
+<!-- Show initial/previous value -->
+<p>Name before change: {{previousUsername}}</p>
+
+<label for="name">Enter name: </label>
+<input type="text" id="name" [(ngModel)]="username" (ngModelChange)="onNameChange()">
+
+<!-- Show current/live-updated value -->
+<p>Hello {{username}}</p>
+
+<!-- Show change status -->
+<p *ngIf="nameChanged">Name was changed!</p>
+<p [ngClass] = "{'active':isActive, 'inactive': !isActive}"> This text is for test attribute directive</p>
+<button (click) = "toggole()"> Toggole Background</button>
